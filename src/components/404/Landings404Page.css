@@ -1,0 +1,98 @@
+
+
+.cuerpo {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: linear-gradient( -225deg, #473878 0%, #358447 51%, #30028E 100%);
+  background-image: linear-gradient(to top, #5c1d22 0%, #a40404 100%);
+  ;
+}
+h1 {
+  margin: 0;
+}
+
+
+.error-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+.error-message__container {
+  text-align: center;
+  color:white;
+}
+h1 {
+ 
+  font-size: 60px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+0%, 20%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-30px);}
+60% {transform: translateY(-15px);}
+}
+
+.bounce {
+animation-name: bounce;
+
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+   min-height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.l-404-page__message-link {
+  background-color: #effc06;
+  border-radius: 0.5rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.l-404-page__message-link:hover,
+.l-404-page__message-link--active {
+  background: #fff;
+}
+
+
+@media only screen and (max-width: 600px){
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+
+:root {
+/* --color-bg: #1f1f38; */
+--color-bg: #3a0707;
+/* --color-bg-variant: #2c2c6c; */
+--color-bg-variant: #6c2c2c;
+/* --color-primary: #4db5ff; */
+--color-primary: #ffc14d;
+--color-primary-variant: rgba(290, 224, 6, 0.4);
+--color-white: #fff;
+--color-light: rgba(255,255,255,0.6);
+--container-width-lg: 75%;
+--container-width-md: 86%;
+--container-width-sm: 90%;
+--transition: all 400ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+    background-image: url(../src/assets/bg-texture.png);
+}
+
+
+.body--light{
+
+    --color-bg: #fff;
+    --color-white: #000;
+    --color-primary: rgb(154, 5, 5);
+    --color-primary-variant: #000;
+    --color-bg-variant: #ebd807;
+    --color-light: rgba(18, 17, 17, 0.6);
+}
+
+
+
+
+
+
+
+/* GENERAL ESTILOS */
+.container {
+width: var(--container-width-lg);
+margin: 0 auto;
+margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    padding: 0.5rem;
+   
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--color-light);
+  
+}
+
+section > h2 {
+color: var(--color-primary);
+margin-bottom: 3rem;
+
+}
+
+
+#about{
+    margin-top: 35rem;
+}
+#experience{
+    margin-top: 5rem;
+}
+#services{
+    margin-top: 5rem;
+}
+
+#portafolio{
+    margin-top: 5rem;
+}
+
+#testimonials{
+    margin-top: 5rem;
+}
+#footer{
+    margin-top: 1rem;
+}
+
+
+.text-light {
+    color: var(--color-light);
+
+}
+
+a {
+color: var(--color-primary);
+transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+}
+
+.btn {
+width: max-content;
+display: inline-block;
+color: var(--color-primary);
+padding: 0.75rem 1.2rem;
+border-radius: 0.4rem;
+cursor: pointer;
+border: 1px solid var(--color-primary);
+transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary {
+background: var(--color-primary);
+color: var(--color-bg);
+}
+
+img {
+display: block;
+width: 100%;
+object-fit: cover;
+
+}
+
+/* tamaños*/
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+
+@media screen and (max-width: 1024px) {
+.container {
+    width: var(--container-width-md);
+}
+
+section {
+   
+    margin-top: 35rem;   
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        
+        width: var(--container-width-sm);
+        margin-bottom: 15rem;
+    }
+    
+    section > h2 {
+        margin-bottom: 1rem;
+    }
+    
+    #about{
+        margin-top: 35rem;
+    }
+    #experience{
+        margin-top: 1rem;
+    }
+    #services{
+        margin-top: 1rem;
+    }
+    
+    #portafolio{
+        margin-top: 1rem;
+    }
+    
+    #testimonials{
+        margin-top: 0rem;
+    }
+    #footer{
+        margin-top: 0rem;
+    }
+    
+    #contact{
+        margin-top: 0rem;
+    }
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+
+    }
+    
+ 

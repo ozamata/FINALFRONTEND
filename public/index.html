@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../public/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partido Politico Peru Libre Paucarpata</title>
+
+
+    <style>
+        @keyframes wave {
+          100% {
+            transform: scale(0);
+          }
+        }
+    
+        .body {
+          margin: 0;
+        }
+    
+        .loader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 60;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          background-color: #040404;
+          transition: opacity 1.0s;
+        }
+    
+        .loader--hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
+    
+        .loader__wave {
+          width: 0.5rem;
+          height: 8rem;
+          background-image: linear-gradient(45deg, #f1e507, rgb(4, 4, 4), #f83411);
+          border-radius: 7rem;
+          animation: wave 1s linear infinite alternate-reverse;
+        }
+    
+        .loader__wave:nth-child(1) {
+          animation-delay: -1s;
+        }
+    
+        .loader__wave:nth-child(2) {
+          animation-delay: -0.9s;
+        }
+    
+        .loader__wave:nth-child(3) {
+          animation-delay: -0.8s;
+        }
+    
+        .loader__wave:nth-child(4) {
+          animation-delay: -0.7s;
+        }
+    
+        .loader__wave:nth-child(5) {
+          animation-delay: -0.6s;
+        }
+    
+        .loader__wave:nth-child(6) {
+          animation-delay: -0.5s;
+        }
+    
+        .loader__wave:nth-child(7) {
+          animation-delay: -0.4s;
+        }
+    
+        .loader__wave:nth-child(8) {
+          animation-delay: -0.3s;
+        }
+    
+        .loader__wave:nth-child(9) {
+          animation-delay: -0.2s;
+        }
+    
+        .loader__wave:nth-child(10) {
+          animation-delay: -0.1s;
+        }
+      </style>
+
+
+<!-- Primary Meta Tags -->
+<title>Partido Politico Peru Libre Paucarpata</title>
+<meta name="title" content="Partido Politico Peru Libre Paucarpata">
+<meta name="description" content="Guidos Ramos Paredes Candidato a la alcaldia de paucarpata
+
+Autot: Oscar Raul Zamata lima">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://perulibrepaucarpata.000webhostapp.com/">
+<meta property="og:title" content="Partido Politico Peru Libre Paucarpata">
+<meta property="og:description" content="Guidos Ramos Paredes Candidato a la alcaldia de paucarpata
+
+Autot: Oscar Raul Zamata lima">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://perulibrepaucarpata.000webhostapp.com/">
+<meta property="twitter:title" content="Partido Politico Peru Libre Paucarpata">
+<meta property="twitter:description" content="Guidos Ramos Paredes Candidato a la alcaldia de paucarpata
+
+Autot: Oscar Raul Zamata lima">
+<meta property="twitter:image" content="">
+
+
+</head>
+<body class="body">
+    <section class="loader" id="loader">
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+        <div class="loader__wave"></div>
+      </section>
+    <div id="#root"></div>
+    <script>
+        window.addEventListener('load', () => {
+          document.getElementById('loader').classList.add('loader--hidden');
+        });
+      </script>
+</body>
+</html>
